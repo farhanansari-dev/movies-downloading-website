@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* 
+Admin login form design
+
+brown:#602022  #1B267B
+blue:#1B267B
+*/
+.alert-container{
+  max-width: 100vw;
+  /* margin: 0 auto; */
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  min-height: 100px;
+  z-index: 1100;
+}
+.admin-login-card{
+  box-shadow:0 5px 10px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 600px;
+}
+.admin-login-card-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

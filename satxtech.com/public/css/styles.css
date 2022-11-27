@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+ 
+}
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #602022, #541f2b, #451f30, #35202f, #271f29, #261e2b, #231e2e, #201e31, #222043, #222255, #202467, #1b257a);
+  background-repeat: no-repeat;
+  padding: 0 0 30px;
+}
+.href-links{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* 
+Navbar design */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  padding: 0 30px;
+}
+.menu-close-btn,.menu-btn,.site-logo{
+  cursor: pointer;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.nav-menu{
+  position: absolute;
+  top: 80px;
+  left: -50%;
+  z-index: 2;
+  transition: all 0.2s ease-out;
+  background-image: linear-gradient(
+  140deg,
+  hsl(208deg 46% 18%) 0%,
+  hsl(208deg 44% 16%) 43%,
+  hsl(208deg 41% 13%) 56%,
+  hsl(209deg 38% 11%) 64%,
+  hsl(209deg 35% 9%) 73%,
+  hsl(208deg 45% 6%) 100%
+  );
+  background-repeat: no-repeat;
+  border-radius: 0 20px 20px 0;
+  width: 50%;
+  max-width: 300px;
+  min-height: calc(80vh - 80px);
+  padding: 20px;
+  color: #fff;
+}
+.menu-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} 
+.menu-links li a{
+  text-decoration: none;
+  color: #fff;
+}
+/* Search Bar styling */
+.searchBar-container{
+  margin: 20px auto;
+  width: 80%;
+  min-width: 300px;
+  border: 1px solid white;
+  border-radius: 23px;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+.searchBar-container input{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin: 0 10px;
+  width: 75%;
+  font-size: 1.3rem;
+}
+
+.searchBar-container ::-webkit-input-placeholder{
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  background-color: transparent;
+}
+.searchBar-container > button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin: 0 0 0 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+/* 
+sub heading designs */
+.category-wraper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.sub-heading-wraper{
+  margin: 25px 0 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.category-btns > .category-button{
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 30px;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.category-btns{
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+/* 
+Horizontal scrolling movie Card Container
+ */
+
+.horizontal-scroll-card-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+
+/* 
+--------------------Card design ----------*/
+
+.movie-card{
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 5px 10px;
+  min-width: 200px;
+  max-width: 200px;
+  margin: 0 10px;
+}
+.movie-card .movie-poster{
+  border-radius: inherit;
+  width: 100%;
+}
+.movie-details{
+  font-size: 1rem;
+  padding: 0 10px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.movie-details p {
+  line-height: 20px;
+  height: 40px;
+  margin: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  
+}
+.movie-download-btn-ratings-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.download-btn-link{
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  font-size: .7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.download-btn-link:hover{
+  color: black;
+  opacity: 0.9;
+}
+.movie-ratings{
+  color: #EFC02E;
+  font-size: .8rem;
+  font-weight: 900;
+}
+
+/* 
+----------------------OverView page design--------- */
+.movie-overview-container{
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.overview-movie-poster{
+  margin: 10px auto 30px;
+  width: 100%;
+  border: 1.5px solid white;
+  border-radius: 40px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+
+.overview-heading{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.overview-text{
+  color: white;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: .9rem;
+  font-weight: 300;
+}
+.cast-heading{
+  color: white;
+  font-size: 1.5rem;
+  
+}
+.cast-list{
+  
+  color: white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin:  10px 0;
+  padding: 0;
+}
+.cast-list li{
+  max-width: 100%;
+  word-wrap: break-word;
+  color: white;
+  font-size: .7rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+.overview-review > p{
+  color: white;
+}
